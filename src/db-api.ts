@@ -13,5 +13,7 @@ export async function getRegistrationByUID(uid: string) {
 }
 
 export async function addRegistrationByUID(regi: IRegistration) {
-  return await db('registrations').table('registrations').insert({ regi })
+  return await db('registrations')
+    .table('registrations')
+    .insert({ ...regi })
 }
