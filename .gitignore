@@ -130,4 +130,4 @@ dist
 .pnp.*
 
 # My stuff
-db/totara.sqlite3
+totara.sqlite3

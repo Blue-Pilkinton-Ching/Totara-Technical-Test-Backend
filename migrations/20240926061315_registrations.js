@@ -7,8 +7,6 @@ exports.up = function (knex) {
     table.string('uid', 256).primary()
     table.string('first_name', 64).notNullable()
     table.string('last_name', 64).notNullable()
-    table.timestamp('created_at').defaultTo(knex.fn.now())
-    table.timestamp('updated_at').defaultTo(knex.fn.now())
     table.string('food', 128).notNullable()
   })
 }
